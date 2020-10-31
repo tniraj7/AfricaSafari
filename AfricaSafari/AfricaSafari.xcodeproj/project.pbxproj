@@ -85,7 +85,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		34CA5DB3254D361200204D32 /* View */ = {
+		34CA5DB3254D361200204D32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				34CA5DB4254D362B00204D32 /* CoverImageView.swift */,
@@ -94,7 +94,7 @@
 				34CA5DCC254D493300204D32 /* HeadingView.swift */,
 				34CA5DCF254D4ACE00204D32 /* InsetGalleryView.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		34CA5DB8254D383600204D32 /* Models */ = {
@@ -135,7 +135,7 @@
 			children = (
 				34CA5DBD254D38E300204D32 /* Extensions */,
 				34CA5DB8254D383600204D32 /* Models */,
-				34CA5DB3254D361200204D32 /* View */,
+				34CA5DB3254D361200204D32 /* Views */,
 				34E8854C254BED2200D5E723 /* Data */,
 				34E88536254BECCF00D5E723 /* Video */,
 				34E88556254BF03B00D5E723 /* App */,
