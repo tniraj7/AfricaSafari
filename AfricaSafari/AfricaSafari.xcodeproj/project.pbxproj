@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34CA5DB5254D362B00204D32 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA5DB4254D362B00204D32 /* CoverImageView.swift */; };
+		34CA5DBA254D384900204D32 /* CoverImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA5DB9254D384900204D32 /* CoverImageModel.swift */; };
+		34CA5DBF254D38FE00204D32 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA5DBE254D38FE00204D32 /* CodableBundleExtension.swift */; };
 		34E88527254BEA3000D5E723 /* AfricaSafariApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E88526254BEA3000D5E723 /* AfricaSafariApp.swift */; };
 		34E88529254BEA3000D5E723 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E88528254BEA3000D5E723 /* ContentView.swift */; };
 		34E8852B254BEA3100D5E723 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34E8852A254BEA3100D5E723 /* Assets.xcassets */; };
@@ -32,6 +35,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34CA5DB4254D362B00204D32 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
+		34CA5DB9254D384900204D32 /* CoverImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageModel.swift; sourceTree = "<group>"; };
+		34CA5DBE254D38FE00204D32 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
 		34E88523254BEA3000D5E723 /* AfricaSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfricaSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34E88526254BEA3000D5E723 /* AfricaSafariApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaSafariApp.swift; sourceTree = "<group>"; };
 		34E88528254BEA3000D5E723 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,6 +75,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34CA5DB3254D361200204D32 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				34CA5DB4254D362B00204D32 /* CoverImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		34CA5DB8254D383600204D32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				34CA5DB9254D384900204D32 /* CoverImageModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		34CA5DBD254D38E300204D32 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				34CA5DBE254D38FE00204D32 /* CodableBundleExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		34E8851A254BEA3000D5E723 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +118,9 @@
 		34E88525254BEA3000D5E723 /* AfricaSafari */ = {
 			isa = PBXGroup;
 			children = (
+				34CA5DBD254D38E300204D32 /* Extensions */,
+				34CA5DB8254D383600204D32 /* Models */,
+				34CA5DB3254D361200204D32 /* View */,
 				34E8854C254BED2200D5E723 /* Data */,
 				34E88536254BECCF00D5E723 /* Video */,
 				34E88556254BF03B00D5E723 /* App */,
@@ -232,10 +265,13 @@
 			files = (
 				34E88529254BEA3000D5E723 /* ContentView.swift in Sources */,
 				34E88566254BF18100D5E723 /* MainView.swift in Sources */,
+				34CA5DB5254D362B00204D32 /* CoverImageView.swift in Sources */,
+				34CA5DBA254D384900204D32 /* CoverImageModel.swift in Sources */,
 				34E8855C254BF12A00D5E723 /* MapView.swift in Sources */,
 				34E88527254BEA3000D5E723 /* AfricaSafariApp.swift in Sources */,
 				34E88559254BF11500D5E723 /* VideoListView.swift in Sources */,
 				34E8855F254BF14000D5E723 /* GalleryView.swift in Sources */,
+				34CA5DBF254D38FE00204D32 /* CodableBundleExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
