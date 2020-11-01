@@ -53,6 +53,18 @@ struct AnimalDetailView: View {
                         .layoutPriority(1)
                 }
                 .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "map", headingText: "National Parks")
+                    InsetMapView()
+                }
+                .padding(.horizontal)
+                
+                Group {
+                    HeadingView(headingImage: "books.vertical", headingText: "Learn more")
+                    ExternalWebLinkView(animal: animal)
+                }
+                .padding(.horizontal)
             }
             .navigationBarTitle("Learn about \(animal.name)", displayMode: .inline)
         }
