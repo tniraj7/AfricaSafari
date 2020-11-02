@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3416543D2550057400AD5FF5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416543C2550057400AD5FF5 /* VideoPlayerView.swift */; };
 		341654412550072800AD5FF5 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341654402550072800AD5FF5 /* VideoPlayerHelper.swift */; };
 		3490B30C254EBD060098479A /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B30B254EBD060098479A /* InsetFactView.swift */; };
 		3490B30F254EC0340098479A /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B30E254EC0340098479A /* InsetMapView.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3416543C2550057400AD5FF5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		341654402550072800AD5FF5 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		3490B30B254EBD060098479A /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		3490B30E254EC0340098479A /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				3490B30E254EC0340098479A /* InsetMapView.swift */,
 				3490B311254EC6150098479A /* ExternalWebLinkView.swift */,
 				3490B31D254ED5500098479A /* VideoListItemView.swift */,
+				3416543C2550057400AD5FF5 /* VideoPlayerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				34CA5DD0254D4ACE00204D32 /* InsetGalleryView.swift in Sources */,
 				34CA5DBF254D38FE00204D32 /* CodableBundleExtension.swift in Sources */,
 				34CA5DCD254D493300204D32 /* HeadingView.swift in Sources */,
+				3416543D2550057400AD5FF5 /* VideoPlayerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
