@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		341654412550072800AD5FF5 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341654402550072800AD5FF5 /* VideoPlayerHelper.swift */; };
 		3490B30C254EBD060098479A /* InsetFactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B30B254EBD060098479A /* InsetFactView.swift */; };
 		3490B30F254EC0340098479A /* InsetMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B30E254EC0340098479A /* InsetMapView.swift */; };
 		3490B312254EC6150098479A /* ExternalWebLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B311254EC6150098479A /* ExternalWebLinkView.swift */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341654402550072800AD5FF5 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		3490B30B254EBD060098479A /* InsetFactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetFactView.swift; sourceTree = "<group>"; };
 		3490B30E254EC0340098479A /* InsetMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetMapView.swift; sourceTree = "<group>"; };
 		3490B311254EC6150098479A /* ExternalWebLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalWebLinkView.swift; sourceTree = "<group>"; };
@@ -95,6 +97,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3416543F2550071400AD5FF5 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				341654402550072800AD5FF5 /* VideoPlayerHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		34CA5DB3254D361200204D32 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +158,7 @@
 		34E88525254BEA3000D5E723 /* AfricaSafari */ = {
 			isa = PBXGroup;
 			children = (
+				3416543F2550071400AD5FF5 /* Helper */,
 				34CA5DBD254D38E300204D32 /* Extensions */,
 				34CA5DB8254D383600204D32 /* Models */,
 				34CA5DB3254D361200204D32 /* Views */,
@@ -303,6 +314,7 @@
 				34CA5DCA254D44F400204D32 /* AnimalDetailView.swift in Sources */,
 				34CA5DC5254D3E9900204D32 /* AnimalModel.swift in Sources */,
 				34E8855C254BF12A00D5E723 /* MapView.swift in Sources */,
+				341654412550072800AD5FF5 /* VideoPlayerHelper.swift in Sources */,
 				3490B30F254EC0340098479A /* InsetMapView.swift in Sources */,
 				34E88527254BEA3000D5E723 /* AfricaSafariApp.swift in Sources */,
 				3490B312254EC6150098479A /* ExternalWebLinkView.swift in Sources */,
