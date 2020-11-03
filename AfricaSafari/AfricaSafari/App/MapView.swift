@@ -11,6 +11,7 @@ struct MapView: View {
     }()
     
     let locations: [NationalParkLocation] = Bundle.main.decode("locations.json")
+    
     // MARK:- Body
     var body: some View {
         Map(coordinateRegion: $region, annotationItems: locations) { item in
