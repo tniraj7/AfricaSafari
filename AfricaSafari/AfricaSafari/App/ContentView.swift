@@ -37,7 +37,7 @@ struct ContentView: View {
                     .animation(.easeIn)
                 }
             }
-            .navigationBarTitle("Africa", displayMode: .large)
+            .navigationBarTitle("Africa Safari", displayMode: .large)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     HStack(spacing: 16) {
