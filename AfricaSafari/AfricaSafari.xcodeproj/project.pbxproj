@@ -10,6 +10,7 @@
 		340EB4CD255920EA00E6FC8D /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340EB4CC255920EA00E6FC8D /* Stickers.xcassets */; };
 		340EB4D1255920EA00E6FC8D /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 340EB4CA255920E800E6FC8D /* Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		340EB4DB2559265000E6FC8D /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340EB4DA2559265000E6FC8D /* CreditsView.swift */; };
+		340EB4E9255928E900E6FC8D /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340EB4E8255928E900E6FC8D /* CenterModifier.swift */; };
 		3416543D2550057400AD5FF5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416543C2550057400AD5FF5 /* VideoPlayerView.swift */; };
 		341654412550072800AD5FF5 /* VideoPlayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341654402550072800AD5FF5 /* VideoPlayerHelper.swift */; };
 		341654442550106400AD5FF5 /* LocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341654432550106400AD5FF5 /* LocationModel.swift */; };
@@ -82,6 +83,7 @@
 		340EB4CC255920EA00E6FC8D /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		340EB4CE255920EA00E6FC8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		340EB4DA2559265000E6FC8D /* CreditsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditsView.swift; sourceTree = "<group>"; };
+		340EB4E8255928E900E6FC8D /* CenterModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterModifier.swift; sourceTree = "<group>"; };
 		3416543C2550057400AD5FF5 /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		341654402550072800AD5FF5 /* VideoPlayerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerHelper.swift; sourceTree = "<group>"; };
 		341654432550106400AD5FF5 /* LocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationModel.swift; sourceTree = "<group>"; };
@@ -145,6 +147,14 @@
 				340EB4CE255920EA00E6FC8D /* Info.plist */,
 			);
 			path = Stickers;
+			sourceTree = "<group>";
+		};
+		340EB4E7255928DC00E6FC8D /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				340EB4E8255928E900E6FC8D /* CenterModifier.swift */,
+			);
+			path = Modifier;
 			sourceTree = "<group>";
 		};
 		3416543F2550071400AD5FF5 /* Helper */ = {
@@ -216,6 +226,7 @@
 		34E88525254BEA3000D5E723 /* AfricaSafari */ = {
 			isa = PBXGroup;
 			children = (
+				340EB4E7255928DC00E6FC8D /* Modifier */,
 				3416543F2550071400AD5FF5 /* Helper */,
 				34CA5DBD254D38E300204D32 /* Extensions */,
 				34CA5DB8254D383600204D32 /* Models */,
@@ -415,6 +426,7 @@
 				340EB4DB2559265000E6FC8D /* CreditsView.swift in Sources */,
 				34CA5DBF254D38FE00204D32 /* CodableBundleExtension.swift in Sources */,
 				34D91FDF2551A409004E4242 /* MotionAnimationView.swift in Sources */,
+				340EB4E9255928E900E6FC8D /* CenterModifier.swift in Sources */,
 				34CA5DCD254D493300204D32 /* HeadingView.swift in Sources */,
 				3416543D2550057400AD5FF5 /* VideoPlayerView.swift in Sources */,
 			);
