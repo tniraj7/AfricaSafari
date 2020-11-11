@@ -13,12 +13,12 @@ animals.
 ## <u>App Screenshots</u>
 
 <p float="right">
-	<img src="./README.assets/preview_1.png" style="zoom:25%;" />
-	<img src="./README.assets/preview_2.png" style="zoom:25%;" />	
-	<img src="./README.assets/preview_3.png" style="zoom:25%;" />
-	<img src="./README.assets/preview_4.png" style="zoom:25%;" />
-	<img src="./README.assets/preview_5.png" style="zoom:25%;" />
-	<img src="./README.assets/preview_6.png" style="zoom:25%;" />
+	<img src="./README.assets/preview_1.png" width="300" height="560"/>
+	<img src="./README.assets/preview_2.png" width="300" height="560"/>	
+	<img src="./README.assets/preview_3.png" width="300" height="560" />
+	<img src="./README.assets/preview_4.png" width="300" height="560" />
+	<img src="./README.assets/preview_5.png" width="300" height="560" />
+	<img src="./README.assets/preview_6.png" width="300" height="560" />
 </p>
 
 
