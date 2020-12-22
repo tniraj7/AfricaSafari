@@ -5,15 +5,16 @@ struct CoverImageView: View {
     let coverImages: [CoverImage] = Bundle.main.decode("covers.json")
     
     // MARK:- Body
-    var body: some View {
-        TabView {
-            ForEach(coverImages) { item in
-                Image(item.name)
-                    .resizable()
-                    .scaledToFit()
-            }
+    var body: some View {        
+        AutoScrollView(imgArray: generateImageArray())
+    }
+    
+    func generateImageArray() -> [UIImage] {
+        var imgArr = [UIImage]()
+        for image in coverImages {
+            imgArr.append(UIImage(named: image.name)!)
         }
-        .tabViewStyle(PageTabViewStyle())
+        return imgArr
     }
 }
 
