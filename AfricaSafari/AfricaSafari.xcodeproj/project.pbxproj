@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		340EB4CD255920EA00E6FC8D /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 340EB4CC255920EA00E6FC8D /* Stickers.xcassets */; };
-		340EB4D1255920EA00E6FC8D /* Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 340EB4CA255920E800E6FC8D /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		340EB4D1255920EA00E6FC8D /* Stickers.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 340EB4CA255920E800E6FC8D /* Stickers.appex */; platformFilter = ios; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		340EB4DB2559265000E6FC8D /* CreditsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340EB4DA2559265000E6FC8D /* CreditsView.swift */; };
 		340EB4E9255928E900E6FC8D /* CenterModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340EB4E8255928E900E6FC8D /* CenterModifier.swift */; };
 		3416543D2550057400AD5FF5 /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3416543C2550057400AD5FF5 /* VideoPlayerView.swift */; };
@@ -21,7 +21,7 @@
 		3490B315254ECE130098479A /* VideoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B314254ECE130098479A /* VideoModel.swift */; };
 		3490B31E254ED5500098479A /* VideoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3490B31D254ED5500098479A /* VideoListItemView.swift */; };
 		34A811052552F90800260B69 /* AnimalGridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A811042552F90800260B69 /* AnimalGridItemView.swift */; };
-		34C22CF0258254AF009D60DA /* AutoScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C22CEF258254AF009D60DA /* AutoScrollViewController.swift */; };
+		34C22CF0258254AF009D60DA /* ImageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C22CEF258254AF009D60DA /* ImageScrollViewController.swift */; };
 		34C22CF4258254F6009D60DA /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C22CF3258254F6009D60DA /* ImageCell.swift */; };
 		34C22CF825825543009D60DA /* AutoScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C22CF725825543009D60DA /* AutoScrollView.swift */; };
 		34CA5DB5254D362B00204D32 /* CoverImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CA5DB4254D362B00204D32 /* CoverImageView.swift */; };
@@ -68,15 +68,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		340EB4D2255920EA00E6FC8D /* Embed App Extensions */ = {
+		340EB4D2255920EA00E6FC8D /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				340EB4D1255920EA00E6FC8D /* Stickers.appex in Embed App Extensions */,
+				340EB4D1255920EA00E6FC8D /* Stickers.appex in Embed Foundation Extensions */,
 			);
-			name = "Embed App Extensions";
+			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -98,7 +98,7 @@
 		3490B31D254ED5500098479A /* VideoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoListItemView.swift; sourceTree = "<group>"; };
 		34A811042552F90800260B69 /* AnimalGridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalGridItemView.swift; sourceTree = "<group>"; };
 		34C22CDA25824E93009D60DA /* Stickers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Stickers.entitlements; sourceTree = "<group>"; };
-		34C22CEF258254AF009D60DA /* AutoScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollViewController.swift; sourceTree = "<group>"; };
+		34C22CEF258254AF009D60DA /* ImageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageScrollViewController.swift; sourceTree = "<group>"; };
 		34C22CF3258254F6009D60DA /* ImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		34C22CF725825543009D60DA /* AutoScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoScrollView.swift; sourceTree = "<group>"; };
 		34CA5DB4254D362B00204D32 /* CoverImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverImageView.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 		34C22CEC2582549F009D60DA /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				34C22CEF258254AF009D60DA /* AutoScrollViewController.swift */,
+				34C22CEF258254AF009D60DA /* ImageScrollViewController.swift */,
 				34C22CF3258254F6009D60DA /* ImageCell.swift */,
 			);
 			path = UIKit;
@@ -334,7 +334,7 @@
 				34E8851F254BEA3000D5E723 /* Sources */,
 				34E88520254BEA3000D5E723 /* Frameworks */,
 				34E88521254BEA3000D5E723 /* Resources */,
-				340EB4D2255920EA00E6FC8D /* Embed App Extensions */,
+				340EB4D2255920EA00E6FC8D /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
@@ -353,7 +353,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					340EB4C9255920E800E6FC8D = {
 						CreatedOnToolsVersion = 12.0.1;
@@ -438,7 +438,7 @@
 				3490B312254EC6150098479A /* ExternalWebLinkView.swift in Sources */,
 				34C22CF4258254F6009D60DA /* ImageCell.swift in Sources */,
 				34E88559254BF11500D5E723 /* VideoListView.swift in Sources */,
-				34C22CF0258254AF009D60DA /* AutoScrollViewController.swift in Sources */,
+				34C22CF0258254AF009D60DA /* ImageScrollViewController.swift in Sources */,
 				3490B315254ECE130098479A /* VideoModel.swift in Sources */,
 				341654442550106400AD5FF5 /* LocationModel.swift in Sources */,
 				34A811052552F90800260B69 /* AnimalGridItemView.swift in Sources */,
@@ -474,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N38EC3HSGY;
 				INFOPLIST_FILE = Stickers/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nirajtiwari.AfricaSafari.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -491,7 +491,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N38EC3HSGY;
 				INFOPLIST_FILE = Stickers/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nirajtiwari.AfricaSafari.Stickers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -621,13 +621,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AfricaSafari/AfricaSafari.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AfricaSafari/Preview Content\"";
 				DEVELOPMENT_TEAM = N38EC3HSGY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AfricaSafari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -645,13 +645,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = AfricaSafari/AfricaSafari.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AfricaSafari/Preview Content\"";
 				DEVELOPMENT_TEAM = N38EC3HSGY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AfricaSafari/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -26,6 +26,7 @@ class ImageScrollViewController: UIViewController {
         collectionView.backgroundColor = .systemGray6
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.isPagingEnabled = true
+        collectionView.layer.cornerRadius = 16
         return collectionView
     }()
     
@@ -52,12 +53,9 @@ class ImageScrollViewController: UIViewController {
         self.view.backgroundColor = .black
         pageControl.numberOfPages = imgArr.count
         pageControl.currentPage = 0
-        DispatchQueue.main.async {
-            self.timer = Timer
-                .scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
-        }
+        self.timer = Timer
+            .scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(self.changeImage), userInfo: nil, repeats: true)
         setupViews()
-        
     }
     
     // MARK:- Helpers
@@ -66,29 +64,34 @@ class ImageScrollViewController: UIViewController {
 
         view.addSubview(backgroundView)
         backgroundView.translatesAutoresizingMaskIntoConstraints = false
-        backgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0).isActive = true
-        backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0).isActive = true
-        backgroundView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0).isActive = true
-        backgroundView.heightAnchor.constraint(equalToConstant: 300).isActive = true
+        NSLayoutConstraint.activate([
+            backgroundView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0),
+            backgroundView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0),
+            backgroundView.topAnchor.constraint(equalTo: view.topAnchor, constant: 0),
+            backgroundView.heightAnchor.constraint(equalToConstant: 300)
+        ])
         
 
         backgroundView.addSubview(collectionView)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
-        collectionView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 10).isActive = true
-        collectionView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -10).isActive = true
-        collectionView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 16).isActive = true
-        collectionView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -50).isActive = true
-        collectionView.register(ImageCell.self, forCellWithReuseIdentifier: resuseIdentifier)
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.layer.cornerRadius = 16
+        collectionView.register(ImageCell.self, forCellWithReuseIdentifier: resuseIdentifier)
+        NSLayoutConstraint.activate([
+            collectionView.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 10),
+            collectionView.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: -10),
+            collectionView.topAnchor.constraint(equalTo: backgroundView.topAnchor, constant: 16),
+            collectionView.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -50)
+        ])
 
         backgroundView.addSubview(pageControl)
         pageControl.translatesAutoresizingMaskIntoConstraints = false
-        pageControl.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 0).isActive = true
-        pageControl.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: 0).isActive = true
-        pageControl.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8).isActive = true
-        pageControl.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 4).isActive = true
+        NSLayoutConstraint.activate([
+            pageControl.leadingAnchor.constraint(equalTo: backgroundView.leadingAnchor, constant: 0),
+            pageControl.trailingAnchor.constraint(equalTo: backgroundView.trailingAnchor, constant: 0),
+            pageControl.bottomAnchor.constraint(equalTo: backgroundView.bottomAnchor, constant: -8),
+            pageControl.topAnchor.constraint(equalTo: collectionView.bottomAnchor, constant: 4)
+        ])
     }
     
     @objc func changeImage() {
@@ -126,7 +129,6 @@ extension ImageScrollViewController: UICollectionViewDelegate, UICollectionViewD
         cell.imageView.image = imgArr[indexPath.item]
         return cell
     }
-    
 }
 
 // MARK:- UICollectionViewDelegateFlowLayout
@@ -136,7 +138,7 @@ extension ImageScrollViewController: UICollectionViewDelegateFlowLayout {
         return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
-    internal func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = collectionView.frame.size
         return CGSize(width: size.width, height: size.height)
     }

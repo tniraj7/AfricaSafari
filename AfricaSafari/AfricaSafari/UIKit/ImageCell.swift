@@ -21,10 +21,12 @@ class ImageCell: UICollectionViewCell {
 
         addSubview(imageView)
         imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.leadingAnchor.constraint(equalTo: self.contentView.leadingAnchor, constant: 0).isActive = true
-        imageView.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor, constant: 0).isActive = true
-        imageView.topAnchor.constraint(equalTo: self.contentView.topAnchor, constant: 0).isActive = true
-        imageView.bottomAnchor.constraint(equalTo: self.contentView.bottomAnchor, constant: 0).isActive = true
-        
+        imageView.contentMode = .scaleAspectFit
+        NSLayoutConstraint.activate([
+            imageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 0),
+            imageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0),
+            imageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 0),
+            imageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: 0)
+        ])
     }
 }
